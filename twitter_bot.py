@@ -16,8 +16,8 @@ user = api.me()
  #   print(follower.name
 
  
-search='search term'# e.g @freeCodeCamp
-number_of_tweets = 500
+search='#100DaysOfCode'# e.g @freeCodeCamp
+number_of_tweets = 20
 for tweet in tweepy.Cursor(api.search, search).items(number_of_tweets):
      try:
          print('Tweet Liked')
